@@ -51,6 +51,56 @@ Mini-project, notes, and labs for this course.
 ## Relfection
 - Cools cools. Before this I was a bit shaky about what NLP is but I believe I have a decent grasp on it now and how it plays a part in LLMs. There of course needs to be an NLP step to do NLU then NGU after the job is done.
 
+## 🧠 Lesson: Intro to In-Context Learning
+- **In-context Learning** = Providng examples of what you want to achieve at the same time as giving the instructions.
+- **Prompt** = Input given to a gernrative AI to achieve an output. Broken down into two main parts: Instruction and Context
+- **Prompt Engineering** = Clarifying a prompt to achieve better output from the LLM.
+- A well structured prompt should provide Instruction (What to do) -> Context -> Input data (Data the LLM will be performing the instruction with) -> Output (Where you want the LLM to include the output)
+
+## Reflection
+It seems as if majority of people (including myself) are prompting haphazrdly. Unless LLMs like ChatGPT format the inpout in a certain way for you, I believe that prompting properly even in ChatGPT, Gemini, Llama, Sora, Veo3 etc. can provide more accurate results. As a result, enhancing productivity compared to normal everyday prompting. Of course though, normal everyday prompting has it's place for simple questions or tasks.
+
+## 🧠 Lesson: Intro to Langchain
+- **Langchain** = Python Framework that allows devs to easily intergrate LLMs into their
+applications
+- It is modular and helps put together the process like building blocks or links the parts of the process by chains. It can easily integrate with vector DBs allowing for quick information retrival.
+- Langchain can be used with external libraries and models.
+
+## Reflection
+I knew a bit about langhchain before so no surprises here. It was cool to learn why there's "Chain" in the name.
+
+## 🧠 Lesson: Advanced Methods of Prompt Engineering
+
+- **Zero-shot Prompting** = Prompting with no examples. The LLM is given a task with no examples
+- **One-shot Prompting** = Prompting with one example. The LLM is given a single example of expected output and is expected to do the task modelled like the example.
+- **Few-shot Prompting** = Promting with a few examples to give more context. The LLM is given multiple examples and generalises how it should output based on the given output.
+- **Chain-of-Thought Prompting** = A prompting method where an LLM is prompted to solve a problem and show the "thought process"eg. breaking down math problems step by step.
+- **Self Consistency** = Prompt technique used to generate multiple independent answers to the same question, then evaluates the answers to determine the most consistent result. This increases reliability.
+- **Prompt Template** = A base for a prompt that helps with generating effective prompts. Uses placeholders.. kind of like a function.
+
+CODE SNIPPET:
+---
+from langchain_core.prompts import PromptTemplate
+prompt_template = PromptTemplate.from_template(
+  "Tell me a {adjective} joke about {content}."
+)
+
+prompt_template.format(adjective="funny", content="chickens")
+
+-> "Tell me a funny joke about chickens."
+---
+
+- **Agent** = Uses LLMs and Frameworks to perform complex tasks across various domains using different prompts.
+
+## Reflection
+I'm a bit tired today so I'm not grasping stuff as well. However, it's cool to learn about different prompting methods. It's giving me some ideas about different things like using Chain-of-Thought prompting to not only do math or coding problems but to do real thinking about day to day problems.
+
+## 🧠 Lesson: LangChain LCEL Chaining Method
+- **LCEL** = (LangChain Expression Language) Pattern for building LangChain applications using the pipe (|) operator to connect components.
+-  **Runnables** = Connects input and output steps. Two types **Sequential** and **Parallel**
+-  **Sequential Runnable** = Runs one after the next using output from 1st Runnable as input to second Runnable
+-  **Parallel Runnable** = Uses same input. Processes everything at the same time.
+
 ### Module 2 – LangChain Core Concepts
 
 
@@ -59,7 +109,27 @@ Mini-project, notes, and labs for this course.
 
 ---
 
-## 🧪 Lab / Mini-Project
+## 🧪 Labs / Mini-Project
+
+## 🧪 Lab 1 – [Master Prompt Engineering and LangChain PromptTemplates]
+
+### 🛠️ What I Built:
+- The lab covered zero-shot, one-shot, few-shot, self-consistency and chain-of-thought prompt engineering techniques. It also introduced basic LangChain prompt template techniques and LECL (LangChain Expression Langue) pipelines.
+
+### 🔑 Key Concepts Practiced:
+- PromptTemplate: Used with LangChain to input different variables into a prompt without having to recreate the prompt everytime.
+- LLMChain: links prompt → LLM → output
+- StructuredOutputParser(): ensures that only python text is displayed.
+- RunnableLambda(): Makes python functions compatable with LangChain
+
+### 💡 What Broke / What Was Confusing:
+- I had to fix how they were initialising their LLM in the lab. Every initialisation was using default params even when params were passed resulting in unexpected behaviour.
+- It was confusing why the model used would give itself more scenarios to repsond to even after the list of "reviews" were exahusted. It made up it's own reviews to respond to depending on the max_new_tokens given. The more tokens, the more the hallucincation, the less tokens, the more accurate the response seemed. At least with model:meta-llama/llama-3-3-70b-instruct on the WatsonxLLM.
+
+### 💥 Learnings:
+- Can now generate structured responses by chaining prompts and models
+- I now prompt using 5 differnt prompting techniques
+
 
 ### Overview
 
