@@ -1,13 +1,14 @@
 ### Practice Quiz 2 Debrief
 
 ✅ Confirmed:
-- Foundation models are used with tuning, for models that can handle multiple NLP tasks with minimal labeled data.
-- The NLU process in NLP is when unstructured text is translated to structured data
+- In-context learning uses examples at inference time to adapt to new tasks without additional training
+- Zero-shot prompting allows the LLM to perform tasks like translation without prior specific examples.
+- The pipe operator in LCEL connects components, ensuring a readable and flexible data flow.
+- LCEL offers clear visualisation of data flow, enhancing workflow readability and flexibility.
+- PromptTemplate allows variables to be inserted into reusable prompt structures, making prompts dynamic and consistent.
 
 🧠 Clarified:
-- Machine learning is an AI approach best suited for systems that predict future outcomes based on past data.
-- Discriminative models focus on decision boundaries and generative models capture data distributions.
-- Discriminative models model the boundary between classes, while generative models model how data is generated through data distributions.
+- Nothing this time
 
 🔄 Still need:
 - Nothing to revisit
