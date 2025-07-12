@@ -58,7 +58,7 @@ Mini-project, notes, and labs for this course.
 - A well structured prompt should provide Instruction (What to do) -> Context -> Input data (Data the LLM will be performing the instruction with) -> Output (Where you want the LLM to include the output)
 
 ## Reflection
-It seems as if majority of people (including myself) are prompting haphazrdly. Unless LLMs like ChatGPT format the inpout in a certain way for you, I believe that prompting properly even in ChatGPT, Gemini, Llama, Sora, Veo3 etc. can provide more accurate results. As a result, enhancing productivity compared to normal everyday prompting. Of course though, normal everyday prompting has it's place for simple questions or tasks.
+It seems as if majority of people (including myself) are prompting haphazrdly. Unless LLMs like ChatGPT format the input in a certain way for you, I believe that prompting properly even in ChatGPT, Gemini, Llama, Sora, Veo3 etc. can provide more accurate results. As a result, enhancing productivity compared to normal everyday prompting. Of course though, normal everyday prompting has it's place for simple questions or tasks.
 
 ## 🧠 Lesson: Intro to Langchain
 - **Langchain** = Python Framework that allows devs to easily intergrate LLMs into their
@@ -81,6 +81,7 @@ I knew a bit about langhchain before so no surprises here. It was cool to learn 
 CODE SNIPPET:
 ---
 from langchain_core.prompts import PromptTemplate
+
 prompt_template = PromptTemplate.from_template(
   "Tell me a {adjective} joke about {content}."
 )
