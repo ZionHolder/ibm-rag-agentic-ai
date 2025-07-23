@@ -145,6 +145,17 @@ Agents are so cool. Can't wait to start using and building my own processes.
 - Can now generate structured responses by chaining prompts and models
 - I now prompt using 5 differnt prompting techniques
 
+## 🧪 Lab 2 – [Build Smarter AI Apps: Empower LLMs with LangChain]
+
+### 🛠️ What I Built:
+
+
+### 🔑 Key Concepts Practiced:
+
+### 💡 What Broke / What Was Confusing:
+
+### 💥 Learnings:
+
 
 ### Overview
 
