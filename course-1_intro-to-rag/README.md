@@ -58,7 +58,7 @@ Mini-project, notes, and labs for this course.
 - A well structured prompt should provide Instruction (What to do) -> Context -> Input data (Data the LLM will be performing the instruction with) -> Output (Where you want the LLM to include the output)
 
 ## Reflection
-It seems as if majority of people (including myself) are prompting haphazrdly. Unless LLMs like ChatGPT format the inpout in a certain way for you, I believe that prompting properly even in ChatGPT, Gemini, Llama, Sora, Veo3 etc. can provide more accurate results. As a result, enhancing productivity compared to normal everyday prompting. Of course though, normal everyday prompting has it's place for simple questions or tasks.
+It seems as if majority of people (including myself) are prompting haphazrdly. Unless LLMs like ChatGPT format the input in a certain way for you, I believe that prompting properly even in ChatGPT, Gemini, Llama, Sora, Veo3 etc. can provide more accurate results. As a result, enhancing productivity compared to normal everyday prompting. Of course though, normal everyday prompting has it's place for simple questions or tasks.
 
 ## 🧠 Lesson: Intro to Langchain
 - **Langchain** = Python Framework that allows devs to easily intergrate LLMs into their
@@ -81,6 +81,7 @@ I knew a bit about langhchain before so no surprises here. It was cool to learn 
 CODE SNIPPET:
 ---
 from langchain_core.prompts import PromptTemplate
+
 prompt_template = PromptTemplate.from_template(
   "Tell me a {adjective} joke about {content}."
 )
@@ -103,7 +104,21 @@ I'm a bit tired today so I'm not grasping stuff as well. However, it's cool to l
 
 ### Module 2 – LangChain Core Concepts
 
+## 🧠 Lesson: LangChain Core Concepts
+- **LangChain** = Python framework used to assist in ecooperating LLMs into applications. It consists of parts like agents, output parsers and chat models.
+- **PromptTemplate** = Used to translate user's questions or messages into clear instructions. There are types of prompt templatess such as SingleString Prompt Template, Few Show Prompt Template and ChatPrompt Template
+- **Ouptut Parser** = Used to help format the output into different formats such as csvs, json, panda data frames
 
+## Reflection
+The videos are a little crammed with info but I believe it was an overview. Nothing too new really came up. I will solidify as I proceed.
+
+## 🧠 Lesson: LangChain Chains and Agents for Building Applications
+- **Chain** = A tool in LangChain that takes input and passes out input. A chain should comprise of multiple smaller chains that utilises each other's input and output.
+- To make a SequentialChain, the logic is basically, making a prompt template, initialising the llm with input and output keys and repeating that with the output key from the previous llm as the input key to the new llm.
+- **Agent** = LLM used to execute tasks. It does not execute tasks on it's own but it uses APIs to do so. Imagine it like an overseer. You ask it what to do and using the APIs, I guess if after processing Human Language, it determines the next best step from the Human Language.
+
+## Reflection
+Agents are so cool. Can't wait to start using and building my own processes.
 
 ### Module 3 – Flask App with LangChain
 
@@ -129,6 +144,17 @@ I'm a bit tired today so I'm not grasping stuff as well. However, it's cool to l
 ### 💥 Learnings:
 - Can now generate structured responses by chaining prompts and models
 - I now prompt using 5 differnt prompting techniques
+
+## 🧪 Lab 2 – [Build Smarter AI Apps: Empower LLMs with LangChain]
+
+### 🛠️ What I Built:
+
+
+### 🔑 Key Concepts Practiced:
+
+### 💡 What Broke / What Was Confusing:
+
+### 💥 Learnings:
 
 
 ### Overview
