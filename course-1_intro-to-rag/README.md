@@ -114,7 +114,7 @@ The videos are a little crammed with info but I believe it was an overview. Noth
 
 ## 🧠 Lesson: LangChain Chains and Agents for Building Applications
 - **Chain** = A tool in LangChain that takes input and passes out input. A chain should comprise of multiple smaller chains that utilises each other's input and output.
-- To make a SequentialChain, the logic is basically, making a prompt template, initialising the llm with input and output keys and repeating that with the output key from the previous llm as the input key to the new llm.
+- To make a SequentialChain, the logic is basically, making a prompt template, initialising the llm with input and output keys and repeating that with the output key from the previous llm as the input key to the new llm. Then output parsers at the end of each to keep format.
 - **Agent** = LLM used to execute tasks. It does not execute tasks on it's own but it uses APIs to do so. Imagine it like an overseer. You ask it what to do and using the APIs, I guess if after processing Human Language, it determines the next best step from the Human Language.
 
 ## Reflection
