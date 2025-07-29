@@ -1,4 +1,4 @@
-### Graded Quiz 2 Debrief
+### Practice Quiz 3 Debrief
 
 ✅ Confirmed:
 - Sequential chains in LangChain are designed to pass the output of one step as input to the next, creating a seamless flow of information.
