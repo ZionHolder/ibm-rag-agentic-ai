@@ -148,14 +148,32 @@ Agents are so cool. Can't wait to start using and building my own processes.
 ## 🧪 Lab 2 – [Build Smarter AI Apps: Empower LLMs with LangChain]
 
 ### 🛠️ What I Built:
-
+- I built prompt templates, an AI agent, Sequential Chains using the traditional way but also using langchain LCEL.
+- I built a simple chatboy with memory incorating document splitting, retrieval vetors via embeddings, document loaders etc.
 
 ### 🔑 Key Concepts Practiced:
+- Setting up Chat models using LangChain built-in message types and testing the difrerce between outputs of two models with different temperatures.
+- Using PrompTemplates
 
 ### 💡 What Broke / What Was Confusing:
+- Using MessagesPlaceholder wasn't.. confusing but I'm not solid with it.
+- Text Splitters.. I know how they work but it's a little confusing sometimes about how they split up the tokens and how the chunks are made. Some text splitters are easy to understand, others it can be a little confusing.
+- LLMs (at least the models in this certification.. hallucinate and add more scenarios to make up max token limits)
 
 ### 💥 Learnings:
-
+- Different models are better suited for different things
+- I learnt about SystemMessages setting the role of the LLM.
+- There are different useful DocumentLoaders for different things in the LangChain framework i.e. PyPDFLoader and WebBaseLoader
+- Embedding models and retrievers (ParentDocument retirever uses large chunks and small chunks.. similar to how cache and main maemory works large chunks -> smaller chunks)
+- Making a RetrievalQA chain
+- Adding memory to conversations
+- Using RunnablePassthrough for LCEL Sequential chains
+- Target specific parts of the chain's out put to get the text only e.g. response['this'] or response['that']
+- for custom tools you can use the @tool decorator or the Tool class directly
+(imports: from langchain_core.tools import Tool
+from langchain.tools import tool)
+- Toolkit: Collection of tools eg using a list.
+- Use from langchain.agents import create_react_agent, AgentExecutor. create_react_agent to create the agent and AgentExecutor to manage it. The format for the agent executer must have the tools in it i.e. {tools} && {tool_names} but also: Thought, Action, Action input, Observation then Thought and Final answer. This is the ReAct framework.
 
 ### Overview
 
