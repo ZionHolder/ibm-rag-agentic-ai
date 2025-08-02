@@ -122,6 +122,27 @@ Agents are so cool. Can't wait to start using and building my own processes.
 
 ### Module 3 – Flask App with LangChain
 
+## 🧠 Lesson: Choose the Right AI Model for Your Use Case
+- It's important to use a multi model approach for your AI use cases
+- Ask: Who built it, what data was it trained on, what guardrails, what risks and regulations to consider
+- Identify best use case to fit your business (GOOD PROMPTS!)
+- Good prompts: Use case, use problem, the ask and the guardrails then research available models then evaluate the models rigorously and continuosly.
+- Things to consider: size, deployment method, transparency, potential risks.
+- Implement and keep evolving!
+
+## 🧠 Lesson: From Idea to AI: Building Applications with Generative AI
+- 3 main parts: Ideation, Building and Deployment
+- **Ideation** = Coming up with use case and evaluating models for usecase
+- **Building** = Finding the right method to use for your model and creating your Application using that method.
+- **Deployment** = Use Containers & KBS and vLLM. Helps with scalability.
+
+## 🧠 Lesson: Intro to Flask
+- **Flask** = Microweb framework, runs on Python
+- **Flask Main features** = Built in web-server, debugger, built-in unit testing
+- Create virtual environtment when using Flask
+
+## Reflection
+- **Well I'm new to Flask so we'll see how this goes. It seems okay for now.
 ---
 
 ## 🧪 Labs / Mini-Project
