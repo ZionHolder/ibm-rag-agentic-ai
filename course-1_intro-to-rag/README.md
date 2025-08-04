@@ -196,6 +196,29 @@ from langchain.tools import tool)
 - Toolkit: Collection of tools eg using a list.
 - Use from langchain.agents import create_react_agent, AgentExecutor. create_react_agent to create the agent and AgentExecutor to manage it. The format for the agent executer must have the tools in it i.e. {tools} && {tool_names} but also: Thought, Action, Action input, Observation then Thought and Final answer. This is the ReAct framework.
 
+
+## 🧪 Lab 3 – [Lab 3 - AI Chatbot with Flask]
+
+### 🛠️ What I Built:
+- I built a simple AI Chatbot using Flask
+
+### 🔑 Key Concepts Practiced:
+- AI Model Testing
+- Setting up virutal environments and setting up/ installing flask
+- Prompt formatting (with tags)
+- Setting up JSON outputs using pydantic BaseModel and Field
+
+### What Was Confusing:
+- Just mainly flask. It IS straightforward but since I'm new to it I just need to practice a bit more.
+
+### 💥 Learnings:
+- Different models have different formatting tags
+- Every model (even if from the same company) have different use cases
+- How to set up a basic flask app with app.py, @app and basic routing.
+- How to integrate your flask app with an AI model
+- I'm more comfortable with using termal to do OS operations
+- You can pass a pydantic object to LangChain's JSON output parser
+
 ### Overview
 
 ### Features
